@@ -63,7 +63,7 @@ const capitalChart = new Chart(ctx, config);
 
 async function fetchData() {
   // Simulating fetching data from the server (replace with your actual data source)
-  const capital = Math.floor(Math.random() * (150000000 - 10000000 + 1) + 10000000); // Random capital value between 1 crore and 15 crores
+  const capital = Math.floor(Math.random() * (50000000 - 40000000 + 1) + 40000000); // Random capital value between 4 crores and 5 crores
   const now = new Date();
 
   // Update labels and data
