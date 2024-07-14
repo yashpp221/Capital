@@ -1,21 +1,52 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const capitalValueElement = document.getElementById('capitalValue');
-  let currentCapital = 42000000; // Starting capital value
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
 
-  function getRandomCapital() {
-    return Math.floor(Math.random() * (44654551 - 41154500 + 1)) + 41154500;
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
 
-  function updateCapital() {
-    const newCapital = getRandomCapital();
-    const isUp = newCapital > currentCapital;
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
 
-    capitalValueElement.textContent = `₹${newCapital.toLocaleString('en-IN')}`;
-    capitalValueElement.className = isUp ? 'up' : 'down';
+main {
+  margin: 20px;
+}
 
-    currentCapital = newCapital;
-  }
+p {
+  font-size: 18px;
+  margin: 20px 0;
+}
 
-  setInterval(updateCapital, 3000); // Update every 3 seconds
-  updateCapital(); // Initial update
-});
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+#capitalBox {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
