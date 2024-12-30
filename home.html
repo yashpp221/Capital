@@ -9,38 +9,62 @@
 <body>
   <!-- Top Navigation Bar -->
   <header class="top-bar">
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <div class="logo">
       <img src="https://github.com/yashpp221/Capital/blob/main/admin-logo.jpg?raw=true" alt="Yash Technology Logo">
     </div>
+    <nav class="nav-links">
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#hire-us">Hire Us</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#more">More</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Sliding Navigation Menu -->
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#hire-us">Hire Us</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about-us">About Us</a></li>
-      <li><a href="#more">More</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <section id="home">
-    <h1>Welcome to Yash Technology</h1>
-    <p>Innovating the Future, One Line of Code at a Time.</p>
+  <!-- Home Section with Video -->
+  <section id="home" class="video-section">
+    <video autoplay muted loop>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <h1>Welcome to Yash Technology</h1>
+      <p>Innovating the Future, One Line of Code at a Time.</p>
+    </div>
   </section>
 
+  <!-- Placeholder Sections -->
+  <section id="products"><h2>Products</h2></section>
+  <section id="services"><h2>Services</h2></section>
+  <section id="pricing"><h2>Pricing</h2></section>
+  <section id="hire-us"><h2>Hire Us</h2></section>
+  <section id="portfolio"><h2>Portfolio</h2></section>
+  <section id="about-us"><h2>About Us</h2></section>
+  <section id="more"><h2>More</h2></section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2024 Yash Technology by Yash Pareek Group. All Rights Reserved.</p>
+    <div class="footer-content">
+      <img src="https://github.com/yashpp221/Capital/blob/main/admin-logo.jpg?raw=true" alt="Yash Technology Logo">
+      <p>Leading the way in IT innovation. Contact us for cutting-edge solutions tailored to your needs.</p>
+      <p><strong>Call:</strong> +91-12345-67890</p>
+      <p><strong>Email:</strong> contact@yashtechnology.com</p>
+      <p><strong>Address:</strong> Sujangarh, Rajasthan, India</p>
+      <ul class="social-media">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Yash Technology by Yash Pareek Group. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
